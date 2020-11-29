@@ -1,0 +1,118 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+[class*=card_] {
+    width: calc(25% - 28px);
+    float: left;
+    margin-left: 20px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+[class*=title] {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.title_green {
+    color: green;
+}
+
+.title_yellow {
+    color: yellow
+}
+
+.title_red {
+    color: red;
+}
+
+.title_velvet {
+    color: rgb(51, 29, 102);
+}
+
+[class*=price_] {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.price_green {
+    color: green;
+}
+
+.price_yellow {
+    color: yellow;
+}
+
+.price_red {
+    color: red;
+}
+
+.price_velvet {
+    color: rgb(51, 29, 102);
+}
+
+.item {
+    color: grey;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+
+}
+
+.item:nth-child(2) {
+    border-top: 1px solid grey;
+}
+
+.button_green {
+    background: green;
+}
+
+.send {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+[class*=button] {
+    border-radius: 20px;
+    margin: 10px auto;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.button_yellow {
+    background-color: yellow;
+}
+
+.button_red {
+    background-color: red;
+}
+
+.button_velvet {
+    background-color: rgb(51, 29, 102);
+}
+
+@media screen and (max-width:992px) {
+    [class*=card_] {
+        width: calc(50% - 28px);
+    }
+
+}
+
+@media screen and (max-width:760px) {
+    [class*=card_] {
+        width: calc(100% - 18px);
+        margin-left: 10px;
+    }
+
+}
